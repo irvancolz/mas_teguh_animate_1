@@ -8,98 +8,196 @@
       href="https://api.fontshare.com/v2/css?f[]=switzer@400,600&display=swap"
       rel="stylesheet"
     />
-    <style>
-      :root {
-        font-size: 16px;
-      }
-      *,
-      *::after,
-      *::before {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Switzer", sans-serif;
-      }
-      .container_wrapper,
-      .container {
-        border-radius: 1rem;
-      }
-      .container_wrapper {
-        background-image: linear-gradient(
-          180deg,
-          rgba(60, 27, 191, 1) 0%,
-          rgba(60, 27, 191, 0) 100%
-        );
-        padding: 1px;
-        margin: 5rem 1.5rem 1.5rem;
-      }
-      .container {
-        position: relative;
-        padding: 5rem 2.5rem;
-        background-image: linear-gradient(180deg, #fff 0%, #fff 100%);
-      }
-      .container::after {
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: linear-gradient(
-          180deg,
-          rgba(60, 27, 191, 0.05) 0%,
-          rgba(60, 27, 191, 0) 100%
-        );
-      }
-      .title {
-        background: -webkit-linear-gradient(0deg, #333242, #3c1bbf);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: 600;
-        font-size: 3.75rem;
-        max-width: 20em;
-        margin-bottom: 1.5rem;
-      }
-      .description {
-        color: #8e8eac;
-        font-size: 1.25rem;
-        max-width: 50em;
-      }
-      .assets {
-        /* height: 62.5rem; */
-        margin-top: 3.75rem;
-        background-image: url(./dots-bg.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-      }
-      .image_content {
-        margin: auto;
-        display: block;
-        max-width: 100%;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container_wrapper">
       <div class="container">
-        <h2 class="title">
-          Install a $150k tech stack into your business without paying for it
-        </h2>
-        <p class="description">
-          There are 100s of sales tools out there, some game-changing, others
-          just overpriced. We&apos;ve tested over 200 to build the ultimate
-          $150K sales stack, so you don&apos;t have to. When you partner with
-          us, you get access to this elite stack, managed by certified experts.
-          (There&apos;s only 9 people on the planet certified in both Smartlead
-          and Clay, and we&apos;re one of them) These help us land in inboxes
-          and craft intent-driven, hyper-personalised emails that feel
-          handwritten for every prospect. Check out a list of our favourite
-          tools by exploring our best in sales tech list.
-        </p>
+        <div class="text_wrapper">
+          <h2 class="title">
+            Install a $150k tech stack into your business without paying for it
+          </h2>
+          <p class="description">
+            There are 100s of sales tools out there, some game-changing, others
+            just overpriced. We&apos;ve tested over 200 to build the ultimate
+            $150K sales stack, so you don&apos;t have to. When you partner with
+            us, you get access to this elite stack, managed by certified
+            experts. (There&apos;s only 9 people on the planet certified in both
+            Smartlead and Clay, and we&apos;re one of them) These help us land
+            in inboxes and craft intent-driven, hyper-personalised emails that
+            feel handwritten for every prospect. Check out a list of our
+            favourite tools by exploring our best in sales tech list.
+          </p>
+        </div>
         <div class="assets">
-          <img class="image_content" src="./content.png" alt="contents" />
+          <!-- left branch -->
+          <div class="branch left_branch">
+            <div class="left_top">
+              <svg
+                width="280"
+                height="188"
+                viewBox="0 0 280 188"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M103 2.24499C145.5 -0.254777 163.722 16.2524 164.5 57.7451C166 137.745 180.5 154.245 279 160.745V161.745C183 156.745 163.5 139.745 163.5 57.7451C161 17.2451 146.5 2.24499 103 3.24489V2.24499Z"
+                  fill="#D0C9EA"
+                />
+                <circle
+                  cx="2.5"
+                  cy="2.5"
+                  r="2.5"
+                  transform="matrix(-1 0 0 1 280 159)"
+                  fill="#3C1BBF"
+                />
+                <circle
+                  cx="2.5"
+                  cy="2.5"
+                  r="2.5"
+                  transform="matrix(-1 0 0 1 105 0)"
+                  fill="#3C1BBF"
+                />
+                <path
+                  d="M2 99.245C35 97.7446 54.8733 103.847 69 121.245C116.5 179.745 112 185.245 278 185.245V186.745C128.5 184.744 118 189.244 68 121.745C55.0237 104.227 29.5 97.7446 2 100.245V99.245Z"
+                  fill="#D0C9EA"
+                />
+                <circle
+                  cx="2.5"
+                  cy="2.5"
+                  r="2.5"
+                  transform="matrix(-1 0 0 1 280 183)"
+                  fill="#3C1BBF"
+                />
+                <circle
+                  cx="2.5"
+                  cy="2.5"
+                  r="2.5"
+                  transform="matrix(-1 0 0 1 5 97)"
+                  fill="#3C1BBF"
+                />
+              </svg>
+            </div>
+            <div class="left_bot">
+              <svg
+                width="280"
+                height="188"
+                viewBox="0 0 280 188"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M103 185.755C145.5 188.255 163.722 171.748 164.5 130.255C166 50.2549 180.5 33.7549 279 27.2553V26.2553C183 31.2549 163.5 48.2549 163.5 130.255C161 170.755 146.5 185.755 103 184.755V185.755Z"
+                  fill="#D0C9EA"
+                />
+                <circle
+                  cx="277.5"
+                  cy="26.5"
+                  r="2.5"
+                  transform="rotate(180 277.5 26.5)"
+                  fill="#3C1BBF"
+                />
+                <circle
+                  cx="102.5"
+                  cy="185.5"
+                  r="2.5"
+                  transform="rotate(180 102.5 185.5)"
+                  fill="#3C1BBF"
+                />
+                <path
+                  d="M2 88.755C35 90.2554 54.8733 84.1532 69 66.755C116.5 8.25488 112 2.75527 278 2.75527V1.25527C128.5 3.25554 118 -1.24447 68 66.255C55.0237 83.7728 29.5 90.2554 2 87.7551V88.755Z"
+                  fill="#D0C9EA"
+                />
+                <circle
+                  cx="277.5"
+                  cy="2.5"
+                  r="2.5"
+                  transform="rotate(180 277.5 2.5)"
+                  fill="#3C1BBF"
+                />
+                <circle
+                  cx="2.5"
+                  cy="88.5"
+                  r="2.5"
+                  transform="rotate(180 2.5 88.5)"
+                  fill="#3C1BBF"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <img class="main_logo" src="./main-logo.png" alt="main-logo" />
+          <!-- right branch -->
+          <div class="branch right_branch">
+            <div class="right_top">
+              <svg
+                width="280"
+                height="188"
+                viewBox="0 0 280 188"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M177 2.24499C134.5 -0.254777 116.278 16.2524 115.5 57.7451C114 137.745 99.5 154.245 1 160.745V161.745C97 156.745 116.5 139.745 116.5 57.7451C119 17.2451 133.5 2.24499 177 3.24489V2.24499Z"
+                  fill="#D0C9EA"
+                />
+                <circle cx="2.5" cy="161.5" r="2.5" fill="#3C1BBF" />
+                <circle cx="177.5" cy="2.5" r="2.5" fill="#3C1BBF" />
+                <path
+                  d="M278 99.245C245 97.7446 225.127 103.847 211 121.245C163.5 179.745 168 185.245 2 185.245V186.745C151.5 184.744 162 189.244 212 121.745C224.976 104.227 250.5 97.7446 278 100.245V99.245Z"
+                  fill="#D0C9EA"
+                />
+                <circle cx="2.5" cy="185.5" r="2.5" fill="#3C1BBF" />
+                <circle cx="277.5" cy="99.5" r="2.5" fill="#3C1BBF" />
+              </svg>
+            </div>
+            <div class="right_bot">
+              <svg
+                width="280"
+                height="188"
+                viewBox="0 0 280 188"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M177 185.755C134.5 188.255 116.278 171.748 115.5 130.255C114 50.2549 99.5 33.7549 1 27.2553V26.2553C97 31.2549 116.5 48.2549 116.5 130.255C119 170.755 133.5 185.755 177 184.755V185.755Z"
+                  fill="#D0C9EA"
+                />
+                <circle
+                  cx="2.5"
+                  cy="2.5"
+                  r="2.5"
+                  transform="matrix(1 0 0 -1 0 29)"
+                  fill="#3C1BBF"
+                />
+                <circle
+                  cx="2.5"
+                  cy="2.5"
+                  r="2.5"
+                  transform="matrix(1 0 0 -1 175 188)"
+                  fill="#3C1BBF"
+                />
+                <path
+                  d="M278 88.755C245 90.2554 225.127 84.1532 211 66.755C163.5 8.25488 168 2.75527 2 2.75527V1.25527C151.5 3.25554 162 -1.24447 212 66.255C224.976 83.7728 250.5 90.2554 278 87.7551V88.755Z"
+                  fill="#D0C9EA"
+                />
+                <circle
+                  cx="2.5"
+                  cy="2.5"
+                  r="2.5"
+                  transform="matrix(1 0 0 -1 0 5)"
+                  fill="#3C1BBF"
+                />
+                <circle
+                  cx="2.5"
+                  cy="2.5"
+                  r="2.5"
+                  transform="matrix(1 0 0 -1 275 91)"
+                  fill="#3C1BBF"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
     </div>
