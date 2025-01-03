@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=switzer@400,600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        font-size: 16px;
+      }
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Switzer", sans-serif;
+      }
+      .container_wrapper,
+      .container {
+        border-radius: 1rem;
+      }
+      .container_wrapper {
+        background-image: linear-gradient(
+          180deg,
+          rgba(60, 27, 191, 1) 0%,
+          rgba(60, 27, 191, 0) 100%
+        );
+        padding: 1px;
+        margin: 5rem 1.5rem 1.5rem;
+      }
+      .container {
+        position: relative;
+        padding: 5rem 2.5rem;
+        background-image: linear-gradient(180deg, #fff 0%, #fff 100%);
+      }
+      .container::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(60, 27, 191, 0.05) 0%,
+          rgba(60, 27, 191, 0) 100%
+        );
+      }
+      .title {
+        background: -webkit-linear-gradient(0deg, #333242, #3c1bbf);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
+        font-size: 3.75rem;
+        max-width: 20em;
+        margin-bottom: 1.5rem;
+      }
+      .description {
+        color: #8e8eac;
+        font-size: 1.25rem;
+        max-width: 50em;
+      }
+      .assets {
+        /* height: 62.5rem; */
+        margin-top: 3.75rem;
+        background-image: url(./dots-bg.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+      .image_content {
+        margin: auto;
+        display: block;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container_wrapper">
+      <div class="container">
+        <h2 class="title">
+          Install a $150k tech stack into your business without paying for it
+        </h2>
+        <p class="description">
+          There are 100s of sales tools out there, some game-changing, others
+          just overpriced. We&apos;ve tested over 200 to build the ultimate
+          $150K sales stack, so you don&apos;t have to. When you partner with
+          us, you get access to this elite stack, managed by certified experts.
+          (There&apos;s only 9 people on the planet certified in both Smartlead
+          and Clay, and we&apos;re one of them) These help us land in inboxes
+          and craft intent-driven, hyper-personalised emails that feel
+          handwritten for every prospect. Check out a list of our favourite
+          tools by exploring our best in sales tech list.
+        </p>
+        <div class="assets">
+          <img class="image_content" src="./content.png" alt="contents" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
