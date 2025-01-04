@@ -60,7 +60,7 @@
   max-width: 53em;
 }
 .assets {
-  margin-top: 3.75rem;
+  margin-top: 7.25rem;
   background-image: url(./dots-bg.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -73,6 +73,63 @@
 
 .main_logo {
   box-shadow: 0px 4px 94px 0px #3c1bbf40;
+}
+
+.branch_container {
+  position: relative;
+}
+
+.icons_container {
+  position: absolute;
+  height: calc((514 / 404) * 100% + 10%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  translate: -15% -15%;
+}
+
+.icons_container.right_icons {
+  right: 0;
+  translate: 15% -15%;
+}
+
+.icons_group {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  display: block;
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+.icon.with_pad {
+  padding: 0.8em;
+}
+
+.icon img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.left_icons .icons_top .icon:last-child {
+  translate: -80% 20%;
+}
+
+.left_icons .icons_bot .icon:first-child {
+  translate: -80% 0%;
+}
+
+.right_icons .icons_top .icon:last-child {
+  translate: 80% 20%;
+}
+
+.right_icons .icons_bot .icon:first-child {
+  translate: 80% 0%;
 }
 
 .branch {
@@ -94,7 +151,7 @@
   background-image: linear-gradient(
     var(--bg-direction),
     #3c1bbf 0.04%,
-    rgba(60, 27, 191, 0) 95.57%
+    rgba(60, 27, 191, 0) 50.57%
   );
   right: 100%;
   animation-duration: 4s;
