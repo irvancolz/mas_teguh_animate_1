@@ -78,7 +78,7 @@
 
 @keyframes main_logo_shadow {
   50% {
-    scale: 1.0125;
+    scale: var(--scale);
     opacity: 0.45;
   }
 }
@@ -95,10 +95,11 @@
 }
 .main_logo_wrapper::before {
   content: " ";
+  --scale: 1.0125;
   position: absolute;
   display: block;
   aspect-ratio: 1;
-  width: 125%;
+  width: 65%;
   background-color: #3c1bbf40;
   opacity: 0.1;
   left: 50%;
@@ -106,7 +107,7 @@
   filter: blur(1rem);
   translate: -50% -50%;
   z-index: 1;
-  border-radius: 6rem;
+  border-radius: 3rem;
   animation: main_logo_shadow 4s ease-in-out infinite 2.5s;
 }
 
@@ -444,6 +445,10 @@
   }
   .main_logo {
     scale: 1;
+  }
+  .main_logo_wrapper::before {
+    width: 125%;
+    border-radius: 6rem;
   }
   .branch_container,
   .branch_container.left {
