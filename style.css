@@ -230,6 +230,7 @@
 }
 .left_bot {
   mask: url(./left-bot.svg);
+  mask-repeat: no-repeat;
 }
 @keyframes right_top_top {
   0% {
@@ -279,27 +280,22 @@
     rotate: 0deg;
     translate: -300% -30%;
   }
-  30% {
-    rotate: 30deg;
-    translate: -200% -30%;
-  }
-  35% {
-    rotate: 50deg;
-  }
-  65% {
-    rotate: 70deg;
-    translate: -150% 300%;
-  }
-  75% {
-    rotate: 35deg;
-    translate: -100% 350%;
-  }
-  85% {
+  20% {
     rotate: 0deg;
-    translate: -50% 400%;
+    translate: -230% -30%;
+  }
+  30% {
+    rotate: 5deg;
+  }
+  60% {
+    rotate: 70deg;
+  }
+  70% {
+    rotate: 35deg;
+    translate: -150% 340%;
   }
   100% {
-    translate: 0 400%;
+    translate: -50% 430%;
   }
 }
 .left_top::before {
@@ -321,7 +317,7 @@
   }
   100% {
     rotate: 0;
-    translate: 0 -50%;
+    translate: -50% -50%;
   }
 }
 .left_top::after {
@@ -363,7 +359,7 @@
   }
   100% {
     rotate: 0;
-    translate: 0 -30%;
+    translate: -50% -30%;
   }
 }
 .left_bot::before {
@@ -400,29 +396,24 @@
 @keyframes left_bot_bot {
   0% {
     rotate: 0deg;
-    translate: -300% -70%;
+    translate: -300% -30%;
+  }
+  20% {
+    rotate: 0deg;
+    translate: -230% -30%;
   }
   30% {
-    translate: -200% -70%;
+    rotate: -10deg;
   }
-  35% {
-    rotate: -45deg;
+  60% {
+    rotate: -70deg;
   }
-  65% {
-    rotate: -75deg;
-    translate: -150% -350%;
-  }
-  75% {
-    rotate: -45deg;
-    translate: -130% -470%;
-  }
-  85% {
-    rotate: 0deg;
-    translate: -75% -500%;
+  70% {
+    rotate: -15deg;
+    translate: -150% -460%;
   }
   100% {
-    rotate: 0deg;
-    translate: 0 -500%;
+    translate: -50% -550%;
   }
 }
 .left_bot::after {
