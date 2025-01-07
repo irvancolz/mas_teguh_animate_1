@@ -78,11 +78,10 @@
 
 @keyframes main_logo_shadow {
   35%,
-  70% {
+  55% {
     opacity: 0.1;
   }
-  40%,
-  60% {
+  45% {
     scale: var(--scale);
     opacity: 0.45;
   }
@@ -94,6 +93,7 @@
   scale: 0.5;
   position: relative;
   z-index: 2;
+  border-radius: 0.872rem;
 }
 .main_logo_wrapper {
   position: relative;
@@ -209,6 +209,10 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+.right_branch > *::after,
+.right_branch > *::before {
+  animation-delay: -1.5s;
+}
 
 .left_top::before,
 .left_top::after,
@@ -236,20 +240,21 @@
 @keyframes right_top_top {
   60% {
     rotate: 0deg;
-    translate: 0 450%;
+    translate: 0 480%;
   }
   74% {
-    translate: 150% 380%;
+    translate: 120% 430%;
   }
   80% {
     rotate: -75deg;
   }
-  90% {
-    translate: 150% 70%;
+  95% {
+    rotate: -25deg;
+    translate: 200% -80%;
   }
   100% {
     rotate: 0deg;
-    translate: 250% -50%;
+    translate: 200% -100%;
   }
 }
 .right_top::before {
