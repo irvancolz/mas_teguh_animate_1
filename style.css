@@ -88,12 +88,16 @@
 }
 .main_logo {
   aspect-ratio: 1;
-  display: block;
+  display: grid;
+  place-items: center;
   width: calc((276 / 16) * 1rem);
   scale: 0.5;
   position: relative;
   z-index: 2;
   border-radius: 0.872rem;
+  background-image: url(./main-logo.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .main_logo_wrapper {
   position: relative;
